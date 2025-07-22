@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naveen M S | Data Analyst</title>
+  <title>Naveen M S | Data Analyst Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h2::after { content: ''; display: block; width: 60px; height: 3px; background: #3b82f6; margin-top: 10px; }
+  </style>
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body class="bg-white text-gray-900">
+
   <!-- Navbar -->
   <nav class="bg-blue-100 p-4 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Naveen M S</h1>
-      <div class="space-x-4">
+      <h1 class="text-2xl font-extrabold">Naveen M S</h1>
+      <div class="space-x-6 font-medium">
         <a href="#home" class="hover:text-blue-600">Home</a>
         <a href="#about" class="hover:text-blue-600">About</a>
         <a href="#projects" class="hover:text-blue-600">Projects</a>
@@ -21,95 +27,92 @@
   </nav>
 
   <!-- Home Section -->
-  <section id="home" class="py-20 text-center">
-    <h2 class="text-4xl font-bold">Hi, I'm Naveen M S</h2>
-    <p class="mt-4 text-lg">A Data Analyst skilled in Python, R, Tableau, Front-End Development, and UI/UX Design.</p>
+  <section id="home" class="py-20 text-center bg-gray-50">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Naveen M S</h2>
+    <p class="text-lg text-gray-700">A Data Analyst skilled in Python, R, Tableau, Front-End Development, and UI/UX Design.</p>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-50">
+  <section id="about" class="py-16">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold mb-6">About Me</h2>
-      <p class="mb-4">Pursued my degree at KGCAS in the Department of BCA. Skilled in Data Analysis, Front-End Development, and Designing.</p>
-      <ul class="list-disc list-inside">
-        <li>Languages: Python, R, JavaScript, HTML/CSS</li>
-        <li>Tools: Tableau, React, Flutter, Firebase, Figma, Adobe Illustrator</li>
-        <li>Interests: Data Visualization, UI/UX Design, Dashboard Building</li>
+      <p class="mb-4 text-gray-800">Pursued my degree at KGCAS in the Department of BCA. I specialize in data analysis, dashboard building, and front-end development.</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li><strong>Languages:</strong> Python, R, JavaScript, HTML/CSS</li>
+        <li><strong>Tools:</strong> Tableau, React, Flutter, Firebase, Figma, Adobe Illustrator</li>
+        <li><strong>Interests:</strong> Data Visualization, UI/UX Design, Automation</li>
       </ul>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-16">
+  <section id="projects" class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6">Projects</h2>
+      <h2 class="text-3xl font-bold mb-10">Projects</h2>
 
       <!-- Project 1 -->
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold">Personality Type Analysis – Introvert vs Extrovert</h3>
-        <p>Used Python for analysis and data visualization. Identified behavioral differences using EDA and visual plots. Data cleaned in R and final visuals in Tableau.</p>
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">🧠 Personality Type Analysis – Introvert vs Extrovert</h3>
+        <p class="text-gray-700">Performed EDA using Python, cleaned data in R, and visualized final insights using Tableau.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src="Screenshot 2025-07-14 110552.png" alt="Distribution Plot" class="rounded shadow" />
-          <img src="Screenshot 2025-07-14 110646.png" alt="Box Plot" class="rounded shadow" />
-          <img src="Screenshot 2025-07-14 110704.png" alt="Correlation Heatmap" class="rounded shadow" />
-          <img src="Screenshot 2025-07-14 110727.png" alt="Pair Plot" class="rounded shadow" />
+          <img src="Screenshot 2025-07-14 110552.png" class="rounded shadow" alt="Distribution Plot" />
+          <img src="Screenshot 2025-07-14 110646.png" class="rounded shadow" alt="Box Plot" />
+          <img src="Screenshot 2025-07-14 110704.png" class="rounded shadow" alt="Correlation Heatmap" />
+          <img src="Screenshot 2025-07-14 110727.png" class="rounded shadow" alt="Pair Plot" />
         </div>
       </div>
 
       <!-- Project 2 -->
-      <!-- Project 2 -->
-<div class="mb-8">
-  <h3 class="text-xl font-semibold">Sales Performance Dashboard</h3>
-  <p>Cleaned data in R and visualized with Tableau Public. Built an interactive dashboard to analyze sales trends across states, shipping types, and order values.</p>
-  <img src="sales-dashboard.png.png" alt="Screenshot 2025-05-22 142534" class="mt-4 w-full max-w-4xl rounded-lg shadow" />
-</div>
-
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">📊 Sales Performance Dashboard</h3>
+        <p class="text-gray-700">Built a Tableau dashboard to analyze sales across different states and shipping types.</p>
+        <img src="sales-dashboard.png.png" alt="Sales Dashboard" class="mt-4 w-full max-w-4xl rounded-lg shadow" />
+      </div>
 
       <!-- Project 3 -->
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold">IoT-Based Smart Poultry Farm</h3>
-        <p>An IoT-based smart poultry farm with real-time monitoring using mobile. Tracks weather, humidity, temperature, and meat/egg production. Includes login access for users to control the farm. Built using front-end + back-end with Firebase integration.</p>
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">🐔 IoT-Based Smart Poultry Farm</h3>
+        <p class="text-gray-700">An end-to-end IoT solution to track poultry production and environment data, with mobile UI and Firebase backend.</p>
         <img src="iot.jpg" alt="IoT Project" class="mt-4 w-full max-w-md rounded-lg shadow" />
       </div>
 
-     <!-- Project 4 -->
-<div class="mb-8">
-  <h3 class="text-xl font-semibold">YouTube Thumbnail Designs</h3>
-  <p>Created YouTube thumbnail designs for friends using Canva. Focused on impactful visual communication and trending design layouts.</p>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-    <img src="crypt in 2025.png.png" alt="Crypto Thumbnail" class="rounded shadow" />
-    <img src="i quit my job !.png" alt="Job Quit Thumbnail" class="rounded shadow" />
-    <img src="YT THUMBNAIL.png" alt="Comparison Thumbnail" class="rounded shadow" />
-  </div>
-</div>
+      <!-- Project 4 -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">🎨 YouTube Thumbnail Designs</h3>
+        <p class="text-gray-700">Created thumbnails using Canva with emphasis on trends, brand relevance, and high CTR.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+          <img src="crypt in 2025.png.png" alt="Crypto Thumbnail" class="rounded shadow" />
+          <img src="i quit my job !.png" alt="Job Quit Thumbnail" class="rounded shadow" />
+          <img src="YT THUMBNAIL.png" alt="Comparison Thumbnail" class="rounded shadow" />
+        </div>
+      </div>
 
-
+      <!-- Project 5 -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">📋 HR Dashboard (Tableau)</h3>
+        <p class="text-gray-700">Visualized employee demographics, income, performance, and department-wise hiring using Tableau Public.</p>
+        <img src="HR  Summary.png" alt="HR Dashboard" class="mt-4 w-full max-w-4xl rounded-lg shadow" />
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-<section id="contact" class="py-16 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
-    <p>Email: <a href="mailto:shailajanaveen1977@gmail.com" class="text-blue-600">shailajanaveen1977@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Naveen30032005" target="_blank" class="text-blue-600">github.com/Naveen30032005</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/naveen-ms911" target="_blank" class="text-blue-600">linkedin.com/in/naveen-ms911</a></p>
-
-    <!-- Call Button -->
-    <div class="mt-4">
-      <button 
-        onclick="window.location.href='tel:+919600579754'" 
-        class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300"
-      >
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <p class="mb-2">📧 Email: <a href="mailto:shailajanaveen1977@gmail.com" class="text-blue-600">shailajanaveen1977@gmail.com</a></p>
+      <p class="mb-2">🐙 GitHub: <a href="https://github.com/Naveen30032005" class="text-blue-600" target="_blank">github.com/Naveen30032005</a></p>
+      <p class="mb-4">🔗 LinkedIn: <a href="https://linkedin.com/in/naveen-ms911" class="text-blue-600" target="_blank">linkedin.com/in/naveen-ms911</a></p>
+      <button onclick="window.location.href='tel:+919600579754'" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700">
         📞 Call Me
       </button>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Footer -->
-  <footer class="py-4 text-center bg-blue-100 mt-10">
+  <footer class="py-4 text-center bg-blue-100">
     <p>&copy; 2025 Naveen M S. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
